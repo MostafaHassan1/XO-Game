@@ -1,0 +1,42 @@
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../pic/1024064.jpg);
+}
+.play-square {
+  width: 25%;
+  height: 15vh;
+  color: white;
+  font-size: 3rem;
+  vertical-align: middle;
+}
+.player-name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.card {
+  margin: 1rem;
+}
+#winner {
+  color: white;
+}
+.player {
+  background-color: rgba(206, 100, 150, 0.5);
+  color: white;
+  margin: 1rem;
+  border-radius: calc(0.25rem - 1px);
+}
+
+.player2 {
+  background-color: rgba(49, 67, 155, 0.5);
+  color: white;
+  margin: 1rem;
+  border-radius: calc(0.25rem - 1px);
+}
+table,
+td,
+tr {
+  background-color: rgba(23, 17, 34, 0.2);
+  border: 3px solid rgba(17, 16, 24, 0.5);
+}

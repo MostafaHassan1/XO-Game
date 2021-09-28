@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>XO Game</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="container vh-100 overflow-hidden">
+      <div class="row text-center">
+        <div class="mx-auto col-md-5 player">
+          <p class="card-header player-name">Player X</p>
+          <p class="card-body">score : <span id="X">0</span></p>
+        </div>
+        <div class="mx-auto col-md-5 player2">
+          <p class="card-header player-name">Player O</p>
+          <p class="card-body">score : <span id="O">0</span></p>
+        </div>
+      </div>
+      <div class="row">
+        <h1 id="winner" class="text-center"></h1>
+        <div class="mx-auto col-md-10 text-center">
+          <table
+            class="table table-border table-responsive"
+            style="color: white"
+          >
+            <tr>
+              <td
+                class="play-square"
+                style="padding: 0px"
+                onclick="play(this,0,0)"
+              ></td>
+              <td class="play-square" onclick="play(this,0,1)"></td>
+              <td class="play-square" onclick="play(this,0,2)"></td>
+            </tr>
+            <tr>
+              <td class="play-square" onclick="play(this,1,0)"></td>
+              <td class="play-square" onclick="play(this,1,1)"></td>
+              <td class="play-square" onclick="play(this,1,2)"></td>
+            </tr>
+            <tr>
+              <td class="play-square" onclick="play(this,2,0)"></td>
+              <td class="play-square" onclick="play(this,2,1)"></td>
+              <td class="play-square" onclick="play(this,2,2)"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
